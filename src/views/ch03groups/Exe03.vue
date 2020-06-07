@@ -1,5 +1,5 @@
 <template>
-  <div class="exe-03 mx-4 my-4" :key="latex">
+  <div class="exe-03 mx-4 my-4">
     <span class="title">Exercise 3.</span>
     <p>
       Write out Cayley tables for groups formed by the symmetries of a rectangle and for 
@@ -83,17 +83,23 @@ export default {
   },
   data() {
     return {
-      latex: null
     }
   },
-  watch: {
-    latex: function() {
-      console.log("Key changed");
-      this.$nextTick().then(() => {
-        this.reRender();
-      });
+  mounted() {
+    window.componentExe03 = this;
+    // setTimeout(() => {
+    //   window.MathJax.typesetPromise();
+    // }, 3000);
+    this.$nextTick(() => {
+      window.MathJax.typesetPromise();
+    });
+  },
+  methods: {
+    forceRerender() {
+      console.log(`Forcing re-render`);
+      this.componentKey += 1;  
     }
-  }
 
+  },
 }
 </script>
