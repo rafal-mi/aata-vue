@@ -8,6 +8,11 @@
 <script>
 export default {
   name: 'MathJax',
+  data() {
+    return {
+      latex: null
+    }
+  },
   watch: {
     latex: function() {
       console.log('Key changed');
