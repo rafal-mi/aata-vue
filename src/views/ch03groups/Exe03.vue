@@ -87,19 +87,32 @@ export default {
   },
   mounted() {
     window.componentExe03 = this;
-    // setTimeout(() => {
-    //   window.MathJax.typesetPromise();
-    // }, 3000);
     this.$nextTick(() => {
-      window.MathJax.typesetPromise();
+      if(window.MathJax) {
+        console.log(`Typeset promise in next tick`);
+        window.MathJax.typesetPromise();
+        return;
+      }
+      console.log(`Setting timeout`);
+      let this_ = this;
+      setTimeout(() => {
+        this_.mathJax();
+      }, 100);
     });
   },
   methods: {
-    forceRerender() {
-      console.log(`Forcing re-render`);
-      this.componentKey += 1;  
+    mathJax() {
+      if(!window.MathJax) {
+        console.log(`Will reassume in next timeout`);
+        let this_ = this;
+        setTimeout(() => {
+          this.mathJax();
+        }, 100);
+        return;
+      }
+      console.log(`Assuming in this timeout`);
+      window.MathJax.typesetPromise();
     }
-
   },
 }
 </script>
