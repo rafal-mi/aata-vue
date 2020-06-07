@@ -2,17 +2,17 @@
   <svg width="130" height="60">
     <defs>
       <linearGradient
-        id="grad1"
+        :id="`grad${gradId}`"
         :x1="gradient.x1"
         :y1="gradient.y1"
         :x2="gradient.x2"
         :y2="gradient.y2"
       >
-        <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-        <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
       </linearGradient>
     </defs>
-    <rect x="20" y="0" width="90" height="60" rx="10" fill="url(#grad1)" />
+    <rect x="20" y="0" width="90" height="60" rx="10" :fill="`url(#grad${gradId})`" />
     <text x="10" y="8" font-size="16">{{ names[0] }}</text>
     <text x="120" y="8" font-size="16">{{ names[1] }}</text>
     <text x="120" y="52" font-size="16">{{ names[2] }}</text>
@@ -23,7 +23,7 @@
 <script>
 export default {
   name: "RectangleSVG",
-  props: ["permutation"],
+  props: ["permutation", "gradId"],
   data() {
     return {
 
