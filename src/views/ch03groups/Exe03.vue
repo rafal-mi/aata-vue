@@ -14,59 +14,83 @@
     </p>
     <p>
       Identity
+    </p>
+    <div class="element-row">
+      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
+      <arrow>\( 1 \)</arrow>
+      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
+      <div>
       \( 
         \bigl(\begin{smallmatrix}
           A & B & C & D \\
           A & B & C & D 
         \end{smallmatrix}\bigr)
       \)
-    </p>
-    <p>
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-      <arrow>\( 1 \)</arrow>
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-    </p>
+      </div>
+    </div>
     <p>
       Rotation \( 180^\circ \)
-      \( 
+    </p>
+    <div class="element-row">
+      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
+      <arrow>\( r \)</arrow>
+      <rectangle-svg permutation="rotation" gradId="2"></rectangle-svg>
+      <div>
+        \( 
+          \bigl(\begin{smallmatrix}
+            A & B & C & D \\
+            C & D & B & A 
+          \end{smallmatrix}\bigr)
+        \)
+      </div>
+    </div>
+    <p>
+      Vertical reflection
+    </p>
+    <div class="element-row">
+      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
+      <arrow>\( v \)</arrow>
+      <rectangle-svg permutation="reflection-vertical" gradId="3"></rectangle-svg>
+      <div>
+        \( 
+          \bigl(\begin{smallmatrix}
+            A & B & C & D \\
+            B & A & D & C 
+          \end{smallmatrix}\bigr)
+        \)
+      </div>
+    </div>
+    <p>
+      Horizontal reflection
+    </p>
+    <div class="element-row">
+      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
+      <arrow>\( h \)</arrow>
+      <rectangle-svg permutation="reflection-horizontal" gradId="4"></rectangle-svg>
+      <div>
+        \( 
+          \bigl(\begin{smallmatrix}
+            A & B & C & D \\
+            D & C & B & A 
+          \end{smallmatrix}\bigr)
+        \)
+      </div>
+    </div>
+    <p style="margin-top: 24px;">
+      Calculation of Cayley table. 
+      \[
+        rv = 
         \bigl(\begin{smallmatrix}
           A & B & C & D \\
           C & D & B & A 
         \end{smallmatrix}\bigr)
-      \)
-    </p>
-    <p>
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-      <arrow>\( r \)</arrow>
-      <rectangle-svg permutation="rotation" gradId="2"></rectangle-svg>
-    </p>
-    <p>
-      Vertical reflection
-      \( 
+        \circ
         \bigl(\begin{smallmatrix}
           A & B & C & D \\
           B & A & D & C 
         \end{smallmatrix}\bigr)
-      \)
-    </p>
-    <p>
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-      <arrow>\( v \)</arrow>
-      <rectangle-svg permutation="reflection-vertical" gradId="3"></rectangle-svg>
-    </p>
-    <p>
-      Horizontal reflection
-      \( 
-        \bigl(\begin{smallmatrix}
-          A & B & C & D \\
-          D & C & B & A 
-        \end{smallmatrix}\bigr)
-      \)
-    </p>
-    <p>
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-      <arrow>\( h \)</arrow>
-      <rectangle-svg permutation="reflection-horizontal" gradId="4"></rectangle-svg>
+        = h
+      \]
     </p>
   </div>
 </template>
@@ -116,3 +140,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+
+.element-row {
+  display: flex;
+  align-items: center;
+}
+
+</style>
