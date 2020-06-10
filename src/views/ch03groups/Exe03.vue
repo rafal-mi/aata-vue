@@ -28,6 +28,7 @@
       \)
       </div>
     </div>
+    <p class="spacer"></p>
     <p>
       Rotation \( 180^\circ \)
     </p>
@@ -39,11 +40,12 @@
         \( 
           \bigl(\begin{smallmatrix}
             A & B & C & D \\
-            C & D & B & A 
+            C & D & A & B 
           \end{smallmatrix}\bigr)
         \)
       </div>
     </div>
+    <p class="spacer"></p>
     <p>
       Vertical reflection
     </p>
@@ -60,37 +62,148 @@
         \)
       </div>
     </div>
-    <p>
+    <p class="spacer"></p>
+    <rectangle-symmetry permutation="reflection-horizontal" gradId="4">
       Horizontal reflection
-    </p>
-    <div class="element-row">
-      <rectangle-svg permutation="identity" gradId="1"></rectangle-svg>
-      <arrow>\( h \)</arrow>
-      <rectangle-svg permutation="reflection-horizontal" gradId="4"></rectangle-svg>
-      <div>
+
+      <template v-slot:name>
+        \( h \)
+      </template>
+
+      <template v-slot:permutation>
         \( 
           \bigl(\begin{smallmatrix}
             A & B & C & D \\
             D & C & B & A 
           \end{smallmatrix}\bigr)
         \)
-      </div>
-    </div>
+      </template>
+    </rectangle-symmetry>
     <p style="margin-top: 24px;">
-      Calculation of Cayley table. 
+      Calculation of Cayley table. It is obvious that each square is the identity.
       \[
         rv = 
         \bigl(\begin{smallmatrix}
           A & B & C & D \\
-          C & D & B & A 
+          C & D & A & B 
         \end{smallmatrix}\bigr)
         \circ
         \bigl(\begin{smallmatrix}
           A & B & C & D \\
           B & A & D & C 
         \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
         = h
       \]
+      \[
+        vr = 
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          B & A & D & C 
+        \end{smallmatrix}\bigr)
+        \circ
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          C & D & A & B 
+        \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
+        = h
+      \]
+      \[
+        rh = 
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          C & D & A & B 
+        \end{smallmatrix}\bigr)
+        \circ
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          B & A & D & C 
+        \end{smallmatrix}\bigr)
+        = v
+      \]
+      \[
+        hr = 
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
+        \circ
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          C & D & A & B 
+        \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          B & A & D & C 
+        \end{smallmatrix}\bigr)
+        = v
+      \]
+      \[
+        vh = 
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          B & A & D & C 
+        \end{smallmatrix}\bigr)
+        \circ
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          C & D & A & B 
+        \end{smallmatrix}\bigr)
+        = r
+      \]
+      \[
+        hv = 
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          D & C & B & A 
+        \end{smallmatrix}\bigr)
+        \circ
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          B & A & D & C 
+        \end{smallmatrix}\bigr)
+        =
+        \bigl(\begin{smallmatrix}
+          A & B & C & D \\
+          C & D & A & B 
+        \end{smallmatrix}\bigr)
+        = r
+      \]
+    </p>
+    <p>
+      The Cayley table of symmetries of square is
+      $$$$
+        \[
+        \begin{array}{ c|c c c c}
+          \circ & 1 & r & v & h \\
+          \hline
+          1     & 1 & r & v & h \\
+          r     & r & 1 & h & v \\
+          v     & v & h & 1 & r \\
+          h     & h & v & r & 1 \\
+        \end{array}
+        \]
+        $$$$
     </p>
   </div>
 </template>
@@ -99,11 +212,12 @@
 import Vue from 'vue'
 import RectangleSvg from '@/components/RectangleSvg';
 import Arrow from '@/components/Arrow';
+import RectangleSymmetry from '@/components/RectangleSymmetry';
 
 export default {
   name: 'Exe03',
   components: {
-    RectangleSvg, Arrow
+    RectangleSvg, Arrow, RectangleSymmetry
   },
   data() {
     return {
@@ -142,6 +256,10 @@ export default {
 </script>
 
 <style scoped>
+
+.spacer {
+  height: 12px;
+}
 
 .element-row {
   display: flex;
