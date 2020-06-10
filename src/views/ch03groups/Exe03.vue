@@ -205,6 +205,14 @@
         \]
         $$$$
     </p>
+    <p class="spacer"></p>
+    <p>
+      The Cayley table of \( (\mathbb{Z}_4, +) \) we get easily from Sage Cell by code: 
+      <pre><code class="language-python">
+        Z4 = Integers(4)
+        Z4.addition_table()
+      </code></pre>
+    </p>
   </div>
 </template>
 
@@ -266,4 +274,8 @@ export default {
   align-items: center;
 }
 
+code {
+  display: block;
+  white-space: pre-wrap   
+}
 </style>
