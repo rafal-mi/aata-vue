@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 
+require('code-prettify/styles/sunburst.css') ;
+
 Vue.config.productionTip = false
 
 new Vue({

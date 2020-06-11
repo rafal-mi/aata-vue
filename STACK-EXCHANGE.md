@@ -8,3 +8,7 @@ https://michaelnthiessen.com/force-re-render/
 https://stackoverflow.com/questions/33978073/updating-dom-with-mathjax-and-vue-js
 
 But, instead of `MathJax.Hub...` now there is `MathJax.typesetPromise()` from 3.0.
+
+### Use of code-prettify
+https://github.com/googlearchive/code-prettify/issues/578
+Important! Install from Git as in article.

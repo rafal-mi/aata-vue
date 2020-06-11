@@ -1,6 +1,6 @@
 <template>
   <div class="exe-03 mx-4 my-4">
-    <span class="title">Exercise 3.</span>
+    <span class="title">Exercise 3.4.3.</span>
     <p>
       Write out Cayley tables for groups formed by the symmetries of a rectangle and for 
       \( (\mathbb{Z}_4, +) \)
@@ -205,19 +205,33 @@
         \]
         $$$$
     </p>
-    <p class="spacer"></p>
     <p>
-      The Cayley table of \( (\mathbb{Z}_4, +) \) we get easily from Sage Cell by code: 
-      <pre><code class="language-python">
+      The Cayley table of \( (\mathbb{Z}_4, +) \) we get from Sage Cell by code:
+      <pre class="prettyprint">
         Z4 = Integers(4)
-        Z4.addition_table()
-      </code></pre>
+        Z4.addition_table(names='elements')
+      </pre>
+    </p>
+    <p>This gives output:</p>
+    <pre class="output">
+      +  0 1 2 3
+      +--------
+      0| 0 1 2 3
+      1| 1 2 3 0
+      2| 2 3 0 1
+      3| 3 0 1 2
+    </pre>
+    <p>
+      Some "squares" i.e. \( x + x \) are not the neutral element \( 0 \), so the groups cannot be the same.
     </p>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
+
+const prettyPrint = require('code-prettify');
+
 import RectangleSvg from '@/components/RectangleSvg';
 import Arrow from '@/components/Arrow';
 import RectangleSymmetry from '@/components/RectangleSymmetry';
@@ -233,6 +247,7 @@ export default {
   },
   mounted() {
     window.componentExe03 = this;
+    let this_ = this;
     this.$nextTick(() => {
       if(window.MathJax) {
         console.log(`Typeset promise in next tick`);
@@ -240,11 +255,15 @@ export default {
         return;
       }
       console.log(`Setting timeout`);
-      let this_ = this;
       setTimeout(() => {
         this_.mathJax();
       }, 100);
+
     });
+    setTimeout(() => {
+      console.log(`Pretty printing`);
+      prettyPrint.prettyPrint();
+    }, 1000);
   },
   methods: {
     mathJax() {
@@ -274,8 +293,24 @@ export default {
   align-items: center;
 }
 
-code {
+/* code {
   display: block;
   white-space: pre-wrap   
+} */
+
+/* pre.prettyprint {
+  border: none !important;
+} */
+
+pre.prettyprint, code.prettyprint {
+	background-color: #000;
+	border-radius: 8px;
+  font-size: smaller;
+  margin-bottom: 0px;
 }
+
+.output {
+  font-size: smaller;
+}
+
 </style>
