@@ -29,7 +29,7 @@ export default {
     return {
       drawer: false,
       links: [
-        { icon: "mdi-view-dashboard", text: "Dashboard", route: "/dashboard" },
+        { icon: "mdi-bookshelf", text: "Groups", route: "/dashboard" },
       ]
     };
   }
