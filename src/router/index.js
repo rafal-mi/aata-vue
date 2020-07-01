@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import JSXGraph from '@/components/JSXGraph.vue'
-import Exe03 from '@/views/ch03groups/Exe03.vue'
 
 import ch03groups from './03-groups'
 

@@ -1,4 +1,4 @@
-import Exe03 from '@/views/ch03groups/Exe03.vue'
+import Exe03 from '@/views/03-groups/Exe03.vue'
 
 const prefix = "03-groups"
 
