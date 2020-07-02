@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import JSXGraph from '@/components/JSXGraph.vue'
 
+import Ch03Groups from '@/views/03-groups/Ch03Groups'
+import Exe03 from '@/views/03-groups/Exe03'
+
 import ch03groups from './03-groups'
 
 Vue.use(VueRouter)
@@ -31,7 +34,21 @@ Vue.use(VueRouter)
   //   name: 'Exe03',
   //   component: Exe03
   // },
-  ...ch03groups
+
+  //...ch03groups
+
+  {
+    path: '/03-groups',
+    component: Ch03Groups,
+    children: [
+      {
+        path: 'exe-03',
+        component: Exe03
+      }
+    ]
+
+  }
+
 ]
 
 const router = new VueRouter({
