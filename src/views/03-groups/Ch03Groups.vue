@@ -1,10 +1,7 @@
 <template>
   <v-container fluid>
     <v-row>
-      <h1>03 Groups</h1>
-    </v-row>
-    <v-row>
-      <a href="/#/03-groups/exe-03">Exercise 3.4.3</a>
+      <h2>03 Groups</h2>
     </v-row>
     <v-row>
       <router-view></router-view>
@@ -15,6 +12,14 @@
 </template>
 <script>
 export default {
+  mounted() {
+    this.$router.push('/03-groups/index')
+  },
+  watch: {
+    '$route' (to, from) {
+      console.log(`From ${from} to ${to}`);
+    }
+  }
     
 }
 </script>

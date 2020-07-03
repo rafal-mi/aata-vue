@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import JSXGraph from '@/components/JSXGraph.vue'
 
 import Ch03Groups from '@/views/03-groups/Ch03Groups'
+import Ch03Index from '@/views/03-groups/Ch03Index'
 import Exe03 from '@/views/03-groups/Exe03'
 
 import ch03groups from './03-groups'
@@ -42,8 +43,16 @@ Vue.use(VueRouter)
     component: Ch03Groups,
     children: [
       {
+        path: 'index',
+        component: Ch03Index
+      },
+      {
         path: 'exe-03',
         component: Exe03
+      },
+      {
+        path: '',
+        component: Ch03Index
       }
     ]
 
