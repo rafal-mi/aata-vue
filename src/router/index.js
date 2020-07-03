@@ -30,11 +30,6 @@ Vue.use(VueRouter)
     name: 'JSXGraph',
     component: JSXGraph
   },
-  // {
-  //   path: '/groups/exe-03',
-  //   name: 'Exe03',
-  //   component: Exe03
-  // },
 
   //...ch03groups
 
