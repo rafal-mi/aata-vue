@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="mx-4">
     <v-row>
       <h2>03 Groups</h2>
     </v-row>

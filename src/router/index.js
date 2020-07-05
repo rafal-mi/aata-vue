@@ -6,6 +6,7 @@ import JSXGraph from '@/components/JSXGraph.vue'
 import Ch03Groups from '@/views/03-groups/Ch03Groups'
 import Ch03Index from '@/views/03-groups/Ch03Index'
 import Exe03 from '@/views/03-groups/Exe03'
+import Exe04 from '@/views/03-groups/Exe04'
 
 import ch03groups from './03-groups'
 
@@ -44,6 +45,10 @@ Vue.use(VueRouter)
       {
         path: 'exe-03',
         component: Exe03
+      },
+      {
+        path: 'exe-04',
+        component: Exe04
       },
       {
         path: '',
