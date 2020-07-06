@@ -30,7 +30,7 @@
       <v-col>
         Because, if this square is made from wood, and lying on a table, we cannot
         <ol>
-          <li>Draw a contour aroud it</li>
+          <li>Draw a contour around it</li>
           <li>Pick it up</li>
           <li>Possibly turn it around, or over</li>
           <li>Put it back in its original place so that it matches the sketched outline</li>

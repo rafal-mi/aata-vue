@@ -9,6 +9,9 @@
     <v-row>
       <a href="/#/03-groups/exe-05">Exercise 3.4.5</a>
     </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-06">Exercise 3.4.6</a>
+    </v-row>
   </v-container>
 </template>
 <script>

@@ -3,7 +3,7 @@ const mathJax = () => {
         console.log(`Will reassume in next timeout`);
         setTimeout(() => {
             mathJax();
-        }, 100);
+        }, 200);
         return;
     }
     console.log(`Assuming in this timeout`);
