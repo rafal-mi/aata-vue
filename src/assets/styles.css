@@ -1,0 +1,23 @@
+pre.prettyprint, code.prettyprint {
+	background-color: #000;
+	border-radius: 8px;
+  font-size: smaller;
+  margin-bottom: 0px;
+}
+
+.output {
+  font-size: smaller;
+}
+
+.pre-container {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.pre-container pre {
+  display: inline-block;
+  text-align: left;
+
+}
+

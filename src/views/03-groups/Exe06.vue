@@ -53,21 +53,16 @@ Z12.addition_table(names='elements')</pre>
 </template>
 
 <script>
-import { mathJax } from '@/lib/mathjax'
-const prettyPrint = require('code-prettify');
+import { runDelayed } from '@/lib/delayed'
 
 export default {
-  name: 'Exe04',
+  name: 'Exe06',
   components: {
     
   },
   mounted() {
-    mathJax();
-    setTimeout(() => {
-      console.log(`Pretty printing`);
-      prettyPrint.prettyPrint();
-
-    }, 1000);
+    console.log(`Component Exe06 mounted`);
+    runDelayed();
   }
 }
 </script>

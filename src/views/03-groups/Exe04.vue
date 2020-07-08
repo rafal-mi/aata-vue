@@ -82,12 +82,10 @@
 
 <script>
 import Vue from 'vue'
-
-const prettyPrint = require('code-prettify');
-
 import RhombusSvg from '@/components/RhombusSvg';
 import Arrow from '@/components/Arrow';
 import RectangleSymmetry from '@/components/RectangleSymmetry';
+import { runDelayed } from '@/lib/delayed'
 
 export default {
   name: 'Exe04',
@@ -99,38 +97,10 @@ export default {
     }
   },
   mounted() {
-    window.componentExe03 = this;
-    let this_ = this;
-    this.$nextTick(() => {
-      if(window.MathJax) {
-        console.log(`Typeset promise in next tick`);
-        window.MathJax.typesetPromise();
-        return;
-      }
-      console.log(`Setting timeout`);
-      setTimeout(() => {
-        this_.mathJax();
-      }, 100);
-
-    });
-    setTimeout(() => {
-      console.log(`Pretty printing`);
-      prettyPrint.prettyPrint();
-    }, 1000);
+    console.log(`Component Exe04 mounted`);
+    runDelayed();
   },
   methods: {
-    mathJax() {
-      if(!window.MathJax) {
-        console.log(`Will reassume in next timeout`);
-        let this_ = this;
-        setTimeout(() => {
-          this.mathJax();
-        }, 100);
-        return;
-      }
-      console.log(`Assuming in this timeout`);
-      window.MathJax.typesetPromise();
-    }
   },
 }
 </script>

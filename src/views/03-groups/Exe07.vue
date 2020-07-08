@@ -64,8 +64,7 @@
 </template>
 
 <script>
-import { mathJax } from '@/lib/mathjax'
-const prettyPrint = require('code-prettify');
+import { runDelayed } from '@/lib/delayed'
 
 export default {
   name: 'Exe07',
@@ -73,12 +72,8 @@ export default {
     
   },
   mounted() {
-    mathJax();
-    setTimeout(() => {
-      console.log(`Pretty printing`);
-      prettyPrint.prettyPrint();
-
-    }, 1000);
+    console.log(`Component Exe07 mounted`);
+    runDelayed();
   }
 }
 </script>

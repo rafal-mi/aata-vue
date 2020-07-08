@@ -17,7 +17,6 @@
 <script>
 export default {
   mounted() {
-    // this.$router.push('/03-groups/index')
   },
   watch: {
     '$route' (to, from) {

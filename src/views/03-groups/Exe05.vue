@@ -49,16 +49,17 @@
 </template>
 
 <script>
-import { mathJax } from '@/lib/mathjax'
 import SquareSymmetry from '@/components/SquareSymmetry';
+import { runDelayed } from '@/lib/delayed'
 
 export default {
-  name: 'Exe04',
+  name: 'Exe05',
   components: {
     SquareSymmetry
   },
   mounted() {
-    mathJax();
+    console.log(`Component Exe05 mounted`);
+    runDelayed();
   }
 }
 </script>

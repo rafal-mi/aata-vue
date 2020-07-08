@@ -10,6 +10,7 @@ import Exe04 from '@/views/03-groups/Exe04'
 import Exe05 from '@/views/03-groups/Exe05'
 import Exe06 from '@/views/03-groups/Exe06'
 import Exe07 from '@/views/03-groups/Exe07'
+import Exe08 from '@/views/03-groups/Exe08'
 
 import ch03groups from './03-groups'
 
@@ -64,6 +65,10 @@ Vue.use(VueRouter)
       {
         path: 'exe-07',
         component: Exe07
+      },
+      {
+        path: 'exe-08',
+        component: Exe08
       },
       {
         path: '',
