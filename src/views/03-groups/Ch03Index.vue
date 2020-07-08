@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid="">
+  <v-container fluid>
     <v-row>
       <a href="/#/03-groups/exe-03">Exercise 3.4.3</a>
     </v-row>
@@ -11,6 +11,9 @@
     </v-row>
     <v-row>
       <a href="/#/03-groups/exe-06">Exercise 3.4.6</a>
+    </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-07">Exercise 3.4.7</a>
     </v-row>
   </v-container>
 </template>
