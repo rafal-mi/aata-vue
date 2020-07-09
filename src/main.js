@@ -9,6 +9,9 @@ require('code-prettify/styles/sunburst.css') ;
 
 Vue.config.productionTip = false
 
+import VueMathjax from 'vue-mathjax'
+Vue.use(VueMathjax)
+
 new Vue({
   router,
   store,
