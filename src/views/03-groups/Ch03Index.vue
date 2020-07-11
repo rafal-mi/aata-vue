@@ -21,6 +21,9 @@
     <v-row>
       <a href="/#/03-groups/exe-10">Exercise 3.4.10</a>
     </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-15">Exercise 3.4.15</a>
+    </v-row>
   </v-container>
 </template>
 <script>
