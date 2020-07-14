@@ -12,6 +12,7 @@
   "dependencies": {
     "code-prettify": "git://github.com/google/code-prettify.git#master",
     "core-js": "^3.6.5",
+    "mathjs": "^7.0.2",
     "save": "^2.4.0",
     "vue": "^2.6.11",
     "vue-mathjax": "0.0.11",
