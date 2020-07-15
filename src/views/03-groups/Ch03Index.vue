@@ -25,6 +25,18 @@
       <a href="/#/03-groups/exe-15">Exercise 3.4.15</a>
     </v-row>
     <v-row>
+      <a href="/#/03-groups/exe-19">Exercise 3.4.19</a>
+    </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-20">Exercise 3.4.20</a>
+    </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-21">Exercise 3.4.21</a>
+    </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-22">Exercise 3.4.22</a>
+    </v-row>
+    <v-row>
       <a href="/#/03-groups/exe-26">Exercise 3.4.26</a>
     </v-row>
   </v-container>
