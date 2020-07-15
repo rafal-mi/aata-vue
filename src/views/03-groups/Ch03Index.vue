@@ -37,6 +37,9 @@
       <a href="/#/03-groups/exe-22">Exercise 3.4.22</a>
     </v-row>
     <v-row>
+      <a href="/#/03-groups/exe-23">Exercise 3.4.23</a>
+    </v-row>
+    <v-row>
       <a href="/#/03-groups/exe-26">Exercise 3.4.26</a>
     </v-row>
   </v-container>
