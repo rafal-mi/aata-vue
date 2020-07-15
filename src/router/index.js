@@ -18,6 +18,7 @@ import Exe20 from '@/views/03-groups/Exe20'
 import Exe21 from '@/views/03-groups/Exe21'
 import Exe22 from '@/views/03-groups/Exe22'
 import Exe23 from '@/views/03-groups/Exe23'
+import Exe24 from '@/views/03-groups/Exe24'
 import Exe26 from '@/views/03-groups/Exe26'
 
 import ch03groups from './03-groups'
@@ -105,6 +106,10 @@ Vue.use(VueRouter)
       {
         path: 'exe-23',
         component: Exe23
+      },
+      {
+        path: 'exe-24',
+        component: Exe24
       },
       {
         path: 'exe-26',
