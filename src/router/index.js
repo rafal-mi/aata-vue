@@ -19,9 +19,12 @@ import Exe21 from '@/views/03-groups/Exe21'
 import Exe22 from '@/views/03-groups/Exe22'
 import Exe23 from '@/views/03-groups/Exe23'
 import Exe24 from '@/views/03-groups/Exe24'
+import Exe25 from '@/views/03-groups/Exe25'
 import Exe26 from '@/views/03-groups/Exe26'
 
 import ch03groups from './03-groups'
+import Tricks from '@/views/tricks/Tricks'
+import tricks from './tricks'
 
 Vue.use(VueRouter)
 
@@ -112,16 +115,26 @@ Vue.use(VueRouter)
         component: Exe24
       },
       {
+        path: 'exe-25',
+        component: Exe25
+      },
+      {
         path: 'exe-26',
         component: Exe26
       },
       {
         path: '',
         component: Ch03Index
-      }
+      },
     ]
 
+  },
+  {
+    path: '/tricks',
+    component: Tricks,
+    children: tricks
   }
+
 
 ]
 

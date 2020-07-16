@@ -30,6 +30,7 @@ export default {
       drawer: false,
       links: [
         { icon: "mdi-bookshelf", text: "3. Groups", route: "/03-groups" },
+        { icon: "mdi-draw", text: "A. Tricks", route: "/tricks" },
       ]
     };
   }
