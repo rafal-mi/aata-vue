@@ -1,4 +1,4 @@
-const delay = 200;
+const delay = 300;
 
 const mathJax = () => {
     if (!window.MathJax) {
