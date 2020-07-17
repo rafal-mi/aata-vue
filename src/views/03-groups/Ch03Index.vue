@@ -63,6 +63,9 @@
     <v-row>
       <a href="/#/03-groups/exe-38">Exercise 3.4.38</a>
     </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-49">Exercise 3.4.49</a>
+    </v-row>
   </v-container>
 </template>
 <script>
