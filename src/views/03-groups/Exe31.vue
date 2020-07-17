@@ -4,7 +4,7 @@
       <v-col>
         <span class="title">Exercise 3.4.31</span>
         <br>
-        Show thet if \( a^2 = e \) for all elements \( a \) in a group \( G \), then \( G \) must be abelian. 
+        Show that if \( a^2 = e \) for all elements \( a \) in a group \( G \), then \( G \) must be abelian. 
       </v-col>
     </v-row>
     <v-row>

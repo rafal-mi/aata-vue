@@ -54,6 +54,9 @@
     <v-row>
       <a href="/#/03-groups/exe-31">Exercise 3.4.31</a>
     </v-row>
+    <v-row>
+      <a href="/#/03-groups/exe-32">Exercise 3.4.32</a>
+    </v-row>
   </v-container>
 </template>
 <script>
