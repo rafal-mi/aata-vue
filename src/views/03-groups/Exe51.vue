@@ -12,6 +12,7 @@
       <v-col cols="12">
         <span class="title mr-2">Solution</span>
         <br>
+        Multiply by \( x \) left, \( y \) right,
         \( x^2 y^2 = 1 \), and for \( y = 1, x^2 = 1 \). 
         And we already proved in 3.4.32 that group with each square unity, is abelian.
         <br>
