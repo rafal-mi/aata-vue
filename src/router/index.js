@@ -27,6 +27,7 @@ import Exe32 from '@/views/03-groups/Exe32'
 import Exe33 from '@/views/03-groups/Exe33'
 import Exe38 from '@/views/03-groups/Exe38'
 import Exe49 from '@/views/03-groups/Exe49'
+import Exe51 from '@/views/03-groups/Exe51'
 
 import ch03groups from './03-groups'
 import Tricks from '@/views/tricks/Tricks'
@@ -151,6 +152,10 @@ Vue.use(VueRouter)
       {
         path: 'exe-49',
         component: Exe49
+      },
+      {
+        path: 'exe-51',
+        component: Exe51
       },
       {
         path: '',
