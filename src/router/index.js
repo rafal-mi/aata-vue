@@ -29,6 +29,9 @@ import Exe38 from '@/views/03-groups/Exe38'
 import Exe49 from '@/views/03-groups/Exe49'
 import Exe51 from '@/views/03-groups/Exe51'
 
+import Ch04CyclicGroups from '@/views/04-cyclic-groups/Ch04CyclicGroups'
+import ch04CyclicGroups from './04-cyclic-groups'
+
 import ch03groups from './03-groups'
 import Tricks from '@/views/tricks/Tricks'
 import tricks from './tricks'
@@ -168,6 +171,11 @@ Vue.use(VueRouter)
     path: '/tricks',
     component: Tricks,
     children: tricks
+  },
+  {
+    path: '/04-cyclic-groups',
+    component: Ch04CyclicGroups,
+    children: ch04CyclicGroups
   }
 
 
