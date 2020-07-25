@@ -4,6 +4,7 @@ import Exe01e from '@/views/04-cyclic-groups/Exe01e'
 import Exe24 from '@/views/04-cyclic-groups/Exe24'
 import Exe25 from '@/views/04-cyclic-groups/Exe25'
 import Exe26 from '@/views/04-cyclic-groups/Exe26'
+import Exe27 from '@/views/04-cyclic-groups/Exe27'
 
 export default [
     {
@@ -25,6 +26,10 @@ export default [
     {
         path: 'exe-26',
         component: Exe26
+    },
+    {
+        path: 'exe-27',
+        component: Exe27
     },
     {
         path: '',
