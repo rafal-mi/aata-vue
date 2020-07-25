@@ -12,6 +12,9 @@
     <v-row>
       <a href="/#/04-cyclic-groups/exe-25">Exercise 25</a>
     </v-row>
+    <v-row>
+      <a href="/#/04-cyclic-groups/exe-26">Exercise 26</a>
+    </v-row>
   </v-container>
 </template>
 <script>
