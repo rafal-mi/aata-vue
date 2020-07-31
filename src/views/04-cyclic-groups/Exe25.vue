@@ -33,7 +33,7 @@ import { runDelayed } from '@/lib/delayed'
 
 export default {
   mounted() {
-    console.log('Component Exe01e mounted');
+    console.log('Component Exe25 mounted');
     runDelayed();
   }
     
