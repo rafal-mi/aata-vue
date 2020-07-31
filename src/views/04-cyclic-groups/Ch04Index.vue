@@ -18,6 +18,9 @@
     <v-row>
       <a href="/#/04-cyclic-groups/exe-27">Exercise 27</a>
     </v-row>
+    <v-row>
+      <a href="/#/04-cyclic-groups/exe-28">Exercise 28</a>
+    </v-row>
   </v-container>
 </template>
 <script>

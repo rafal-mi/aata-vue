@@ -80,21 +80,21 @@
     <v-row>
       <v-col>
         <div id="fact">
-        <p>
-        <b>FACT:</b>
-        &nbsp;
-        <i>\(g^m)^{-1} = g^{-m} \) for \( m \ge 0 \).</i>
-        </p>
-        <p>
-        <i>Proof.</i>
-        $$
-          g^m g^{-m} = g^m (g^{-1})^m 
-            = \underbrace{g \boldsymbol{\cdot} \cdots \boldsymbol{\cdot} g}_{m~\text{times}}
-              \boldsymbol{\cdot}
-              \underbrace{g^{-1} \boldsymbol{\cdot} \cdots \boldsymbol{\cdot} g^{-1}}_{m~\text{times}}
-            = 1 \Box
-        $$  
-        </p>
+          <p>
+          <b>FACT:</b>
+          &nbsp;
+          <i>\(g^m)^{-1} = g^{-m} \) for \( m \ge 0 \).</i>
+          </p>
+          <p>
+          <i>Proof.</i>
+          $$
+            g^m g^{-m} = g^m (g^{-1})^m 
+              = \underbrace{g \boldsymbol{\cdot} \cdots \boldsymbol{\cdot} g}_{m~\text{times}}
+                \boldsymbol{\cdot}
+                \underbrace{g^{-1} \boldsymbol{\cdot} \cdots \boldsymbol{\cdot} g^{-1}}_{m~\text{times}}
+              = 1 \Box
+          $$  
+          </p>
         </div>
       </v-col>
     </v-row>
