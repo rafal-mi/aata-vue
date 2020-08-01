@@ -33,6 +33,9 @@
     <v-row>
       <a href="/#/04-cyclic-groups/exe-32">Exercise 32</a>
     </v-row>
+    <v-row>
+      <a href="/#/04-cyclic-groups/exe-34">Exercise 34</a>
+    </v-row>
   </v-container>
 </template>
 <script>
