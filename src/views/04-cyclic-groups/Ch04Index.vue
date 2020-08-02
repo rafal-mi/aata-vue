@@ -45,6 +45,12 @@
     <v-row>
       <a href="/#/04-cyclic-groups/exe-44">Exercise 44</a>
     </v-row>
+    <v-row>
+      <a href="/#/04-cyclic-groups/exe-45">Exercise 45</a>
+    </v-row>
+    <v-row>
+      <a href="/#/04-cyclic-groups/exe-46">Exercise 46</a>
+    </v-row>
   </v-container>
 </template>
 <script>
