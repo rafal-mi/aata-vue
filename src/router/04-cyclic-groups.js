@@ -12,6 +12,8 @@ import Exe31 from '@/views/04-cyclic-groups/Exe31'
 import Exe32 from '@/views/04-cyclic-groups/Exe32'
 import Exe33 from '@/views/04-cyclic-groups/Exe33'
 import Exe34 from '@/views/04-cyclic-groups/Exe34'
+import Exe39 from '@/views/04-cyclic-groups/Exe39'
+import Exe44 from '@/views/04-cyclic-groups/Exe44'
 
 export default [
     {
@@ -64,7 +66,15 @@ export default [
     },
     {
         path: 'exe-34',
-        component: Exe34
+        component: Exe39
+    },
+    {
+        path: 'exe-39',
+        component: Exe39
+    },
+    {
+        path: 'exe-44',
+        component: Exe44
     },
     {
         path: '',
